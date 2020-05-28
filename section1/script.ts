@@ -1,9 +1,23 @@
-const character = "mariooooo";
+//Arrays-------------------------------
 
+let names = ["lunsd", "dsfds", "dfsd"];
+names.push("dfsd");
+// names.push(22);
 
-console.log(character);
+let numbe = [21, 42, 54];
+numbe.push(34);
+numbe.push(32);
+// numbe.push("dsd");
 
-const inputs = document.querySelectorAll('input')
-console.log('dev: inputs', inputs)
+let mixed = ["fas", "sdfas", 2, 54];
+// mixed.push(true);
+mixed.push("dsfsd");
+mixed.push(21);
 
-inputs.forEach(input => console.log(input))
+//Objects---------------------------
+
+let ninja = {
+  name: "fasf",
+  belt: "orange",
+  age: 12,
+};
