@@ -1,9 +1,16 @@
-const character = "mariooooo";
+let character = "mario";
+let age = 30;
+let isVoid = true;
 
+// character = 23;
+character = "locvsdvds";
 
-console.log(character);
+age = 12.12;
 
-const inputs = document.querySelectorAll('input')
-console.log('dev: inputs', inputs)
+isVoid = false;
 
-inputs.forEach(input => console.log(input))
+const cir = (dia: number) => {
+  return dia * Math.PI;
+};
+
+console.log(cir(12543));
