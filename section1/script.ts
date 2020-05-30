@@ -1,16 +1,24 @@
-let character = "mario";
-let age = 30;
-let isVoid = true;
 
-// character = 23;
-character = "locvsdvds";
+//Arrays-------------------------------
 
-age = 12.12;
+let names = ["lunsd", "dsfds", "dfsd"];
+names.push("dfsd");
+// names.push(22);
 
-isVoid = false;
+let numbe = [21, 42, 54];
+numbe.push(34);
+numbe.push(32);
+// numbe.push("dsd");
 
-const cir = (dia: number) => {
-  return dia * Math.PI;
+let mixed = ["fas", "sdfas", 2, 54];
+// mixed.push(true);
+mixed.push("dsfsd");
+mixed.push(21);
+
+//Objects---------------------------
+
+let ninja = {
+  name: "fasf",
+  belt: "orange",
+  age: 12,
 };
-
-console.log(cir(12543));
