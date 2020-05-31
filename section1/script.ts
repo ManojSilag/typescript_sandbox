@@ -1,24 +1,25 @@
+let age: any = 23;
 
-//Arrays-------------------------------
+console.log("dev: age", age);
 
-let names = ["lunsd", "dsfds", "dfsd"];
-names.push("dfsd");
-// names.push(22);
+age = true;
 
-let numbe = [21, 42, 54];
-numbe.push(34);
-numbe.push(32);
-// numbe.push("dsd");
+console.log("dev: age", age);
 
-let mixed = ["fas", "sdfas", 2, 54];
-// mixed.push(true);
-mixed.push("dsfsd");
-mixed.push(21);
+age = "dsdsv";
 
-//Objects---------------------------
+console.log("dev: age", age);
 
-let ninja = {
-  name: "fasf",
-  belt: "orange",
-  age: 12,
-};
+age = { name: "manoj " };
+
+console.log("dev: age", age);
+
+let mixed: any[] = [];
+mixed.push("dsvsd");
+mixed.push(true);
+mixed.push(12);
+console.log(mixed);
+
+let ninja: { name: any; age: any };
+ninja = { name: "dsvs", age: "fvds" };
+console.log("dev: ninja", ninja);
