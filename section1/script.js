@@ -1,3 +1,4 @@
+
 var age = 23;
 console.log("dev: age", age);
 age = true;
@@ -14,3 +15,4 @@ console.log(mixed);
 var ninja;
 ninja = { name: "dsvs", age: "fvds" };
 console.log("dev: ninja", ninja);
+
