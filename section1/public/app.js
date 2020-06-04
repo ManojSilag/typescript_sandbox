@@ -4,9 +4,25 @@ const InvoiceTwo = new Invoice("anuj", "works on anuj", 400);
 let invoices = [];
 invoices.push(InvoiceOne);
 invoices.push(InvoiceTwo);
-console.log(invoices);
+const me = {
+    name: "manoj",
+    age: 12,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log(`I spent `, amount);
+        return amount;
+    }
+};
+console.log(me);
+me.speak("yoyoyo");
+me.spend(1232);
+const greetPerson = (person) => {
+    console.log('hello', person.name);
+};
+greetPerson(me);
 const form = document.querySelector(".new-item-form");
-// console.log(form.children);
 const types = document.querySelector("#type");
 const tofrom = document.querySelector("#tofrom");
 const details = document.querySelector("#details");
