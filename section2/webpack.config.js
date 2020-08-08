@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  devtool : "eval-source-map",
   entry: "./src/index.ts",
   output: {
     filename: "bundle.js",
@@ -15,5 +16,8 @@ module.exports = {
         include: [path.resolve(__dirname, "src")]
       }
     ]
+  },
+  resolve:{
+      extensions: ['.ts', '.js']
   }
 };
