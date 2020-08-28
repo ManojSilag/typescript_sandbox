@@ -2,7 +2,7 @@ import {} from "@types/googlemaps";
 import { User } from "./User";
 import { Company } from "./Company";
 
-interface Mappable {
+export interface Mappable {
   location: {
     lat: number;
     lng: number;
@@ -14,6 +14,7 @@ interface Mappable {
 export class CustomMap {
   private googleMap: google.maps.Map;
 
+  
   constructor(divId: string) {
     this.googleMap = new google.maps.Map(document.getElementById(divId), {
       zoom: 1,
