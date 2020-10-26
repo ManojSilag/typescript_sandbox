@@ -72,4 +72,4 @@ function printHousesOrCars<T extends Printable>(array: T[]): void {
 
 }
 
-printHousesOrCars([1,2,3,4])
+printHousesOrCars<House>([new House(), new Car(), new House()])
