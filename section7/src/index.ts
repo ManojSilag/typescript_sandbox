@@ -1,10 +1,11 @@
 import { User } from "./models/User";
-import axios from "axios";
 
 const user = new User({ name: "New Recod", age: 0 });
 
-user.events.on("change", () => {
-  console.log("Change!!!");
+console.log(user.get("name"));
+
+user.on("change", () => {
+  console.log("user changed");
 });
 
-user.events.trigger("change")
+user.trigger("change");
