@@ -3,9 +3,13 @@ export class Attributes<T> {
 
   get = <K extends keyof T>(key: K): T[k] => {
     return this.data[key];
-  }
+  };
 
   set(update: T): void {
     Object.assign(this.data, update);
+  }
+
+  getAll(): T {
+    return this.data;
   }
 }
